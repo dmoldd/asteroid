@@ -1,0 +1,258 @@
+.header .container {
+  justify-content: end;
+}
+
+.main-nav--closed {
+  @media (max-width: 650px) {
+    width: fit-content;
+  }
+}
+
+.header__change-theme-button {
+  height: 50px;
+  min-width: 50px;
+  background-image: url("../img/theme/light-theme.png");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  padding: 0;
+  transform: rotate(0deg);
+  transition: transform 1.5s, background-size 0.5s;
+
+  @media (max-width: 650px) {
+    order: 1;
+  }
+
+  @media (max-width: 520px) {
+    margin: 0 0 0 auto;
+  }
+
+  &-container:hover & {
+    transform: rotate(250deg);
+    transition: transform 1.5s, background-size 0.5s;
+  }
+
+  &-container:active & {
+    background-size: 70% 70%;
+    transition: transform 1.5s, background-size 0.5s;
+  }
+
+  &-container {
+    cursor: pointer;
+    padding: 5px 10px 5px;
+    border: 1px solid transparent;
+    margin: 0 auto 0 5px;
+    display: flex;
+
+    @media (max-width: 650px) {
+      min-width: 190px;
+      margin: 0 20px 0 auto;
+    }
+
+    @media (max-width: 520px) {
+      position: relative;
+    }
+  }
+
+  &-container:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: $transition-fast;
+
+    @media (max-width: 520px) {
+      border: 1px solid transparent;
+    }
+  }
+
+  &-container:hover .header__theme-name {
+    color: #fff;
+    transition: $transition-fast;
+  }
+}
+
+.header__theme-name {
+  color: transparent;
+  transition: $transition-fast;
+  margin: 0 0 0 10px;
+  align-self: center;
+
+  @media (max-width: 520px) {
+    position: absolute;
+    top: 59px;
+    left: 75px;
+    color:#e6e6e6;
+  }
+}
+
+.dark-theme .header__change-theme-button {
+  background-image: url("../img/theme/dark-theme.png");
+}
+
+.dark-theme .hero {
+  background-color: #186f5d;
+  color: #8FBDB2;
+}
+
+.dark-theme .hero__main-p {
+  border: 1px solid #8FBDB2;
+}
+
+.dark-theme .main-nav--closed {
+  color: #8FBDB2;
+}
+
+.dark-theme .main-nav__hover-logo span {
+  background-color: #8FBDB2;
+}
+
+.dark-theme .header  {
+  background-color: #186f5d;
+}
+
+.dark-theme .header__social-networks-vk a svg path,
+.dark-theme .header__social-networks-tg a svg path,
+.dark-theme .header__social-networks-inst a svg path,
+.dark-theme .header__social-networks-watsapp a svg path {
+  fill: #8FBDB2;
+}
+
+.dark-theme .header__social-networks-vk:hover a svg path,
+.dark-theme .header__social-networks-tg:hover a svg path,
+.dark-theme .header__social-networks-inst:hover a svg path,
+.dark-theme .header__social-networks-watsapp:hover a svg path {
+  fill: #fff;
+}
+
+.dark-theme .main-nav__list--droped {
+  border-top: 30px solid #186f5d;
+  background-color: #186f5d;
+}
+
+.dark-theme .advantages .container {
+  background-color: hsl(0, 0%, 79.2%);
+}
+
+.dark-theme .hero__border-triangle {
+  fill: hsl(0, 0%, 79.2%);
+}
+
+.dark-theme .services {
+  background-color: hsl(0, 0%, 79.2%);
+}
+
+.dark-theme .steps {
+  background-color: hsl(0, 0%, 79.2%);
+}
+.dark-theme .advantages__title,
+.dark-theme .advantages__title-desc {
+  color: #365953;
+}
+
+.dark-theme .advantages__item--front,
+.dark-theme .advantages__item--back {
+  background-color: #e6e6e6;
+}
+
+.dark-theme .steps .container,
+.dark-theme .steps__border-top path {
+  background-color: #186f5d;
+  fill: #186f5d;
+  
+  @media (max-width: 880px) {
+    background-color: #93aa92;
+    fill: #93aa92;
+  }
+}
+
+.dark-theme .services__border-top {
+  fill: #186f5d;
+
+  @media (max-width: 880px) {
+    fill: #93aa92;
+  }
+}
+
+.dark-theme .steps__title,
+.dark-theme .steps__desc {
+  color: #8FBDB2;
+
+  @media (max-width: 880px) {
+    color: #292e29;
+  }
+}
+
+.dark-theme .steps__list {
+  background-color: #93aa92;
+}
+
+.dark-theme .steps__item img {
+  filter: brightness(0.8);
+}
+
+.dark-theme .services__item--pack {
+  background-color: #e6e6e6;
+}
+
+.dark-theme .sale .container {
+  background-color: #186f5d;
+
+  @media (max-width: 510px) {
+    background-color: hsl(0deg, 0%, 79.2%);
+  }
+}
+
+.dark-theme .sale__item {
+  background-color: #93aa92;
+}
+
+.dark-theme .faq {
+  background-color: hsl(0deg, 0%, 79.2%);
+}
+
+.dark-theme .footer {
+  background-color: #186f5d;
+}
+
+.dark-theme .footer__border-top {
+  fill: #186f5d;
+}
+
+.dark-theme .main-nav__link a {
+  color:#93aa92;
+  border-bottom: 2px solid transparent;
+  transition: $transition-fast;
+}
+
+.dark-theme .main-nav__link:hover a {
+  border-bottom: 2px solid #93aa92;
+  transition: $transition-fast;
+}
+
+.dark-theme .header__logo img {
+  filter: brightness(0.8);
+}
+
+.dark-theme .hero__title span {
+  border: 1px solid #c3cec3;
+}
+
+.dark-theme .advantages__card {
+  @media (max-width: 474px) {
+    background: #e6e6e6;
+  }
+}
+
+.dark-theme .steps__item-desc svg path {
+  fill: black;
+}
+
+.dark-theme .advantages-modal {
+  background-color: #93aa92;
+  border: 5px solid hsl(0, 0%, 55.7%);
+}
+
+.dark-theme .advantages-modal__close-button span {
+  background-color: rgb(74, 104, 98);
+}
